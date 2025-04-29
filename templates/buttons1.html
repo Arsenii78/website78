@@ -1,0 +1,68 @@
+{% extends "base78.html" %}
+
+{% block content %}
+<style>
+        .history {
+           width:1000px;
+           height:50px;
+           background:white;
+           border-color: #000000;
+           border-radius: 5px;
+           color:black;
+           font-size: 30px
+
+        }
+        .history:hover {
+            background-color:green;
+        }
+</style>
+ <form action="http://127.0.0.1:5000/history">
+        <button type="submit" class="history">История</button>
+ </form>
+{% endblock %}
+
+{% block content1 %}
+<style>
+    .sight {
+           position: absolute;
+           left: 1007px;
+           top: 249px;
+           width:900px;
+           height:50px;
+           background:white;
+           border-color: #000000;
+           border-radius: 5px;
+           color:black;
+           font-size: 30px
+        }
+        .sight:hover {
+            background-color:green;
+        }
+</style>
+ <form action="http://127.0.0.1:5000/sight">
+        <button type="submit" class="sight">Достопримечательности</button>
+ </form>
+{% endblock %}
+
+{% block content2 %}
+<style>
+    .profile {
+           position:absolute;
+           left:1670px;
+           top:0px;
+           width:250px;
+           height:50px;
+           background:white;
+           border-color: #000000;
+           border-radius: 5px;
+           color:black;
+           font-size: 30px
+        }
+        .profile:hover {
+            background-color:green;
+        }
+</style>
+ <form action="http://127.0.0.1:5000/profile">
+        <button type="submit" class="profile" style="position:absolute; left:1620px">Профиль</button>
+ </form>
+{% endblock %}
